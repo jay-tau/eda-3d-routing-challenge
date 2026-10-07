@@ -44,7 +44,7 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.1566 | 20/20 | 339328 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.1563 | 20/20 | 339406 | — |  | — |
-| 3 | drama3d-portfolio | YJ Kim | 1.1550 | 20/20 | 340352 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.1562 | 20/20 | 339546 | — |  | — |
 | 4 | pathfinder_lns | Tazeem Mahashin | 1.1514 | 20/20 | 341746 | 46476.76 | ✓ | — |
 | 5 | warm_lns_refinement † | kesudh | 1.1509 | 20/20 | 342006 | — |  | — |
 | 6 | spt_lns | James (IrwinJam) | 1.1444 | 20/20 | 345066 | — |  | — |
@@ -53,8 +53,9 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 | 9 | synapse-surge | Sameer-Deepak | 1.1004 | 20/20 | 368374 | — |  | — |
 | 10 | lns_negotiated | adityuhkapoor | 1.0937 | 20/20 | 367388 | — |  | — |
 | 11 | negotiated_delay | Mantej Singh Gill | 1.0906 | 20/20 | 368046 | 752.29 | ✓ | — |
-| 12 | dw_metric_lns | OpenCode (DeepSeek V4.1 Flash) | 1.0584 | 20/20 | 393668 | 25289.93 |  | — |
-| 13 | shivaahir158 | Shiva Ahir (PhD Candidate, Stony Brook University) | 1.0274 | 20/20 | 388638 | 440.56 | ✓ | — |
+| 12 | gavinoh-spt-lns | Gavin Oh | 1.0632 | 20/20 | 382210 | 1826.80 |  | — |
+| 13 | dw_metric_lns | OpenCode (DeepSeek V4.1 Flash) | 1.0584 | 20/20 | 393668 | 25289.93 |  | — |
+| 14 | shivaahir158 | Shiva Ahir (PhD Candidate, Stony Brook University) | 1.0274 | 20/20 | 388638 | 440.56 | ✓ | — |
 
 † derivative entry (refines another entry's routes): coordinated_refinement builds on drama3d-portfolio; leonid-popryho; pathfinder_lns; warm_lns_refinement (Leonid Popryho; Taz33m; Tazeem Mahashin; YJ Kim; kesudh); warm_lns_refinement builds on pathfinder_lns (Taz33m).
 
@@ -64,7 +65,7 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.4136 | 9/9 | 142321 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.4123 | 9/9 | 142413 | — |  | — |
-| 3 | drama3d-portfolio | YJ Kim | 1.4058 | 9/9 | 143323 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.4085 | 9/9 | 142989 | — |  | — |
 | 4 | spt_lns | James (IrwinJam) | 1.3971 | 9/9 | 144153 | — |  | — |
 | 5 | pathfinder_lns | Tazeem Mahashin | 1.3884 | 9/9 | 144991 | — |  | — |
 | 6 | warm_lns_refinement † | kesudh | 1.3874 | 9/9 | 145095 | — |  | — |
@@ -89,7 +90,7 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.1399 | 8/8 | 531688 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.1397 | 8/8 | 531766 | — |  | — |
-| 3 | drama3d-portfolio | YJ Kim | 1.1340 | 8/8 | 534722 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.1391 | 8/8 | 532016 | — |  | — |
 | 4 | pathfinder_lns | Tazeem Mahashin | 1.1277 | 8/8 | 537468 | 62411.00 | ✓ | — |
 | 5 | warm_lns_refinement † | kesudh | 1.1274 | 8/8 | 537576 | 7543.00 | ✓ | — |
 | 6 | spt_lns | James (IrwinJam) | 1.1188 | 8/8 | 541966 | — |  | — |
@@ -107,9 +108,9 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.0984 | 1/1 | 1042314 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.0984 | 1/1 | 1042322 | — |  | — |
-| 3 | pathfinder_lns | Tazeem Mahashin | 1.0914 | 1/1 | 1048990 | 43262.89 | ✓ | — |
-| 4 | warm_lns_refinement † | kesudh | 1.0911 | 1/1 | 1049332 | 2070.00 | ✓ | — |
-| 5 | drama3d-portfolio | YJ Kim | 1.0910 | 1/1 | 1049366 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.0978 | 1/1 | 1042926 | — |  | — |
+| 4 | pathfinder_lns | Tazeem Mahashin | 1.0914 | 1/1 | 1048990 | 43262.89 | ✓ | — |
+| 5 | warm_lns_refinement † | kesudh | 1.0911 | 1/1 | 1049332 | 2070.00 | ✓ | — |
 | 6 | spt_lns | James (IrwinJam) | 1.0779 | 1/1 | 1062208 | — |  | — |
 | 7 | lns_negotiated | adityuhkapoor | 1.0669 | 1/1 | 1073124 | — |  | — |
 | 8 | synapse-surge | Sameer-Deepak | 1.0008 | 1/1 | 1143964 | — |  | — |
@@ -122,7 +123,7 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.3508 | 4/4 | 476231 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.3505 | 4/4 | 476333 | — |  | — |
-| 3 | drama3d-portfolio | YJ Kim | 1.3285 | 4/4 | 483483 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.3392 | 4/4 | 479359 | — |  | — |
 | 4 | spt_lns | James (IrwinJam) | 1.3156 | 4/4 | 489177 | — |  | — |
 | 5 | pathfinder_lns | Tazeem Mahashin | 1.3111 | 4/4 | 490499 | 61369.30 | ✓ | — |
 | 6 | warm_lns_refinement † | kesudh | 1.3085 | 4/4 | 491467 | 3621.00 | ✓ | — |
@@ -139,7 +140,7 @@ Submit by pull request; see [CONTRIBUTING.md](CONTRIBUTING.md). Also in [LEADERB
 |---:|---|---|---:|:---:|---:|---:|:---:|:---:|
 | 1 | coordinated_refinement † | jay-tau | 1.4673 | 3/3 | 204497 | — |  | — |
 | 2 | leonid-popryho | Leonid Popryho | 1.4667 | 3/3 | 204581 | — |  | — |
-| 3 | drama3d-portfolio | YJ Kim | 1.4546 | 3/3 | 206311 | — |  | — |
+| 3 | cuda-have-been-shorter | YJ Kim | 1.4634 | 3/3 | 204963 | — |  | — |
 | 4 | pathfinder_lns | Tazeem Mahashin | 1.4354 | 3/3 | 209175 | 47267.61 | ✓ | — |
 | 5 | spt_lns | James (IrwinJam) | 1.4347 | 3/3 | 209415 | — |  | — |
 | 6 | warm_lns_refinement † | kesudh | 1.4331 | 3/3 | 209509 | 3615.00 | ✓ | — |
