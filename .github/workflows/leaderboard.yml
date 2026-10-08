@@ -31,6 +31,13 @@ jobs:
               echo "Disallowed changes:"; echo "$bad"
               exit 1
             fi
+            # every added or updated submission must report its runtime
+            dirs="$(echo "$changed" | grep '^submissions/[^/_][^/]*/[^/]*/' | cut -d/ -f1-3 | sort -u)"
+            existing=""
+            for d in $dirs; do [ -d "$d" ] && existing="$existing $d"; done
+            if [ -n "$existing" ]; then
+              python3 scripts/check_submission_meta.py $existing
+            fi
             # README.md: only the generated leaderboard block may change
             if echo "$changed" | grep -qx 'README.md'; then
               strip() { sed '/^<!-- leaderboard:start/,/^<!-- leaderboard:end -->/d'; }
