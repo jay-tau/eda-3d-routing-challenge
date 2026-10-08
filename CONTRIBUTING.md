@@ -28,7 +28,7 @@ aggregate (each case is normalized to that tier's baseline, so the baseline scor
 ```
 submissions/<tier>/<your-name>/
     <case>.sol.json     one per case (name matches the instance, e.g. case_01.sol.json / ctrl.sol.json)
-    runtime.json        optional: {"<case>": seconds, ...}  (populates the runtime/Pareto axis)
+    runtime.json        required: {"<case>": seconds, ...}  (see "Runtime" below)
     meta.json           author / method / url / date  (copy submissions/_template/meta.json)
 ```
 
@@ -77,6 +77,13 @@ you can only rank higher by submitting better legal routes.
 * Don't modify the benchmark instances, references, or the toolkit in a submission
   PR. Toolkit changes are welcome — as separate PRs.
 * One directory per distinct method. Iterating on your own entry is fine.
+* **Runtime (required).** `runtime.json` gives, for every case in the tier, the
+  wall-clock seconds of the one run that produced that case's route file. Time
+  the router end to end on that case (input to `.sol.json`), not a sum over
+  seeds or a single stage. `meta.json` must also say what it ran on:
+  `"hardware": "<CPU / GPU, RAM>"` and `"threads": <CPU threads used>`. CI
+  rejects new or updated submissions without these. Entries already on the
+  board that still lack a full `runtime.json` on 2026-10-15 become unranked.
 * **Derivative entries.** If your routes start from another entry's published
   routes (a warm start, a refinement, or files carried over unchanged), say so in
   every tier's `meta.json`:

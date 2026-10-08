@@ -411,6 +411,15 @@ def _load_verification(root: str) -> Dict[str, str]:
     return out
 
 
+# Every ranked entry must report runtime: runtime.json with the wall-clock seconds
+# of one run per case, and `hardware` + `threads` in meta.json. CI enforces this
+# for new and updated submissions. Entries already on the board have until
+# RUNTIME_DEADLINE; on that date a maintainer sets ENFORCE_RUNTIME = True and
+# entries still without a full runtime.json drop to unranked.
+RUNTIME_DEADLINE = "2026-10-15"
+ENFORCE_RUNTIME = False
+
+
 def _render_leaderboard_body(root: str, heading: str = "##") -> List[str]:
     """The per-tier tables, one `<heading> <tier>` section each."""
     from .scorer import score_submission_set, rank_submissions, pareto_frontier
@@ -430,6 +439,10 @@ def _render_leaderboard_body(root: str, heading: str = "##") -> List[str]:
         man = _load_manifest(suite_dir)
         subs = [score_submission_set(man, suite_dir, d, name, _load_runtimes(d))
                 for name, d in entries]
+        if ENFORCE_RUNTIME:
+            from dataclasses import replace
+            subs = [s if s.total_runtime is not None else replace(s, complete=False)
+                    for s in subs]
         ranked = rank_submissions(subs)
         frontier = set(pareto_frontier(subs))
         metas = {name: _load_meta(d) for name, d in entries}
@@ -443,7 +456,7 @@ def _render_leaderboard_body(root: str, heading: str = "##") -> List[str]:
         for i, s in enumerate(ranked, 1):
             agg = f"{s.aggregate:.4f}" if s.complete else "—"
             td = s.total_delay if s.total_delay is not None else "—"
-            rt = f"{s.total_runtime:.2f}" if s.total_runtime is not None else "—"
+            rt = f"{s.total_runtime:.2f}" if s.total_runtime is not None else "missing"
             author = _md_cell(metas.get(s.name, {}).get("author") or "—")
             upstream = _derived_from(metas.get(s.name, {}))
             mark = ""
@@ -469,6 +482,9 @@ _LEGEND = ["Ranked per tier (each tier is normalized to its own baseline, so a",
            "**higher aggregate is better** and the baseline itself scores 1.0000).",
            "`✓` marks submissions on the runtime-vs-total-delay Pareto frontier;",
            "`†` marks derivative entries that start from another entry's routes.",
+           "`runtime (s)` is the summed wall-clock time of one run per case, as",
+           "reported in `runtime.json` (hardware and threads are in `meta.json`).",
+           f"It is required: entries still `missing` it on {RUNTIME_DEADLINE} become unranked.",
            "`verified` is set by the maintainers once they have re-run an entry's",
            "router and reproduced its routes (`verification.json`); `—` means not yet."]
 
