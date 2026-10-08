@@ -2,5 +2,7 @@
  "author": "Your Name or Handle",
  "url": "https://github.com/you/your-router (optional)",
  "method": "one-line description of your router/approach",
- "date": "YYYY-MM-DD"
+ "date": "YYYY-MM-DD",
+ "hardware": "CPU model (and GPU if used), RAM \u2014 what the timed run ran on",
+ "threads": 8
 }

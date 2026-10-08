@@ -10,7 +10,7 @@ by submitting better *legal* routes.
 ```
 submissions/<tier>/<your-name>/
     <case>.sol.json      one per case in the tier (e.g. case_01.sol.json, ctrl.sol.json)
-    runtime.json         optional: {"<case>": seconds, ...} — used for the runtime axis
+    runtime.json         required: {"<case>": seconds, ...} — wall-clock of the run that produced each case
     meta.json            author, method, url, date  (see _template/meta.json)
 ```
 
